@@ -1,0 +1,133 @@
+@import url('https:fonts.googleapis.com/css2?family=Dosis:wght@300%display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'dosis',sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#a2000a,#cf0000);
+
+}
+header{
+    position: fixed;
+    background: #22242A;
+    padding: 25px;
+    width: 100%;
+    height: 30px;
+  }
+  
+  .left_area h3{
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    font-family:fantasy;
+  }
+  
+  .left_area span{
+    color: #f7fbfb;
+  }
+  
+  .logout_btn{
+    padding: 10px;
+    position: absolute;
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0f141a, #bdc3c7);
+    top: 900%;
+    left: 47%;
+    border-radius: 50%;
+    font-weight: 100;
+    color: #ffffff;
+    transition: 60s;
+    transition-property: background;
+    font-family:Avenir;
+  }
+  
+  .logout_btn:hover{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #507294, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2c3e50, #80afcf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+   
+    z-index: 1;
+}
+.container .sespet
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+}
+.circulo
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border-radius: 50%;
+}
+.circulo::before
+{
+    content: '';
+    position:absolute ;
+    inset: -200px -300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    animation: animate 5s ease-in-out infinite;
+}
+.circulo .santa
+{
+    content: '';
+    position:absolute ;
+    inset: -60px -200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    animation: animate 5s ease-in-out infinite;
+}
+@keyframes animate 
+{
+0% ,100%
+{
+    transform: translateY(-25px);
+}
+    50%
+    {
+        transform: translateY(25px);
+ 
+    }
+}
+.circulo::after
+{
+content:''
+}
+
